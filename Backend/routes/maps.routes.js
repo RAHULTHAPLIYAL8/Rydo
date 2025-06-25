@@ -1,0 +1,16 @@
+const express=require("express");
+const router=express.Router();
+const mapController= require("../controllers/map.controller");
+const authMiddleware=require("../middlewares/auth.middleware");
+const {query}=require("express-validator")
+
+//Google api for finding langitude and longitude
+router.get('/get-coordinates',query('address').isString().isLength({min:3}),authMiddleware.authUser,mapController.getCoordinates)
+
+//Google api for finding distance between two location
+router.get('/get-distance-time',query('origin').isString().isLength({min:3}),query('destination').isString().isLength({min:3}),
+authMiddleware.authUser,mapController.getDistanceTime)
+
+//Google api for give auto suggestion of the location
+router.get('/get-suggestions',query('input').isString().isLength({min:3}),authMiddleware.authUser,mapController.getAutoCompleteSuggestions)
+module.exports=router;
