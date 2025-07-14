@@ -59,8 +59,7 @@ function InitalizeSocket(server) {
     });
 }
 
-
-//Function to send "user details " to the captain 
+ 
 function sendMessageToSocketId(socketId, messageObject) {
     if (!io) {
         console.error("Socket.io not initialized.");
