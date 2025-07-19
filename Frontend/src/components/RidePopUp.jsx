@@ -69,7 +69,7 @@ const RidePopUp = (props) => {
           onClick={()=>{props.setConfirmRidePopupPanel(true)
             props.confirmRide();
           }}
-          className="relative z-50  bg-green-600 text-white font-semibold p-2 px-10 rounded-lg"
+          className="relative z-50  bg-blue-950 text-white font-semibold p-2 px-10 rounded-lg"
         >
           Accept
         </button>

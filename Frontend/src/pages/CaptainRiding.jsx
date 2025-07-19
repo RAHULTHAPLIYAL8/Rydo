@@ -52,7 +52,7 @@ const CaptainRiding = () => {
                ></i>
               </h5>
               <h4 className='text-xl font-semibold'>4km away</h4>
-              <button  className=" flex justify-center w-full mt-5 bg-green-600 text-white font-semibold p-2 rounded-lg"> Complete Ride</button>
+              <button  className=" flex justify-center w-full mt-5 bg-blue-950 text-white font-semibold p-2 rounded-lg"> Complete Ride</button>
               </div> 
              
              {/* Panel */}

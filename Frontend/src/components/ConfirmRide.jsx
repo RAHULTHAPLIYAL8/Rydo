@@ -64,7 +64,7 @@ const ConfirmRide = (props) => {
 
           }
           }
-          className="relative z-50 w-full mt-5 bg-green-600 text-white font-semibold p-2 rounded-lg"
+          className="relative z-50 w-full mt-5 bg-blue-950 text-white font-semibold p-2 rounded-lg"
         >
           Confirm 
         </button>

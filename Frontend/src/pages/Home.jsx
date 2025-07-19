@@ -185,8 +185,8 @@ const Home = () => {
         <LiveTracking/>
         </div>
         {/* <img className='h-full w-full object-cover' src="https://simonpan.com/wp-content/themes/sp_portfolio/assets/uber-suboptimal.jpg" alt="" /> */}
-      </div>
-      <div className='h-screen absolute flex flex-col justify-end top-0 w-full pointer-events-none '>
+      
+      <div className='h-screen absolute flex flex-col justify-end top-0 w-full'>
         <div className='h-[30%] bg-white relative p-5'>
           <h5 
             ref={panelCloseRef} 
@@ -202,6 +202,7 @@ const Home = () => {
               type="text"
               placeholder='Add a pickup Location'
               onClick={() => {
+                console.log("rahul thapliyal")
                 setIsPanelOpen(true);
                 setActiveField("pickup");
               }}
@@ -220,7 +221,7 @@ const Home = () => {
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
             />
-            <button onClick={findTrip} className="bg-black text-white px-4 py-2 rounded-lg mt-3 w-full">
+            <button onClick={findTrip} className="bg-blue-950 text-white px-4 py-2 rounded-lg mt-3 w-full">
               Find Trip
             </button>
           </form>
@@ -232,6 +233,7 @@ const Home = () => {
             handleSuggestionSelect={handleSuggestionSelect}
           />
         </div>
+      </div>
       </div>
       <div ref={vehiclePanelRef} className='w-full fixed z-10 bottom-0 px-3 py-10 pt-12 translate-y-full bg-white'>
         <VehiclePanel selectVehicle={setVehicleType} fare={fare} setConfirmRidePanel={setConfirmRidePanel} setVehiclePanel={setVehiclePanel}/>

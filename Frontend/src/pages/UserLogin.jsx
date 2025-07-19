@@ -73,7 +73,7 @@ const UserLogin = () => {
         <p className='text-center  mb-7'>New here ?<Link to="/signup" className='text-blue-700'>Create New Account</Link></p>
         </div>
         <div>
-        <Link to="/captain-login" className='bg-[#10b641] text-white flex items-center justify-center font-semibold  rounded px-4 py-2 w-full text-lg mb-7'>Login as Captain</Link>
+        <Link to="/captain-login" className='bg-blue-950 text-white flex items-center justify-center font-semibold  rounded px-4 py-2 w-full text-lg mb-7'>Login as Captain</Link>
     </div>
     </div>
     </>
