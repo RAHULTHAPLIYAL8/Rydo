@@ -1,6 +1,11 @@
 import React from 'react'
+import {UserDataContext} from '../context/UserContext'
 
 const UserProfile = ({setUserProfileShow}) => {
+ 
+  const {user,setUser}=React.useContext(UserDataContext);
+
+
   return (
        <div>
       {" "}
@@ -8,14 +13,13 @@ const UserProfile = ({setUserProfileShow}) => {
   className="float-right font-bold cursor-pointer"
   onClick={() => {
     setUserProfileShow(false);
-    console.log("rahul thapiyal");
   }}
 >
   X
 </h1>
 
       <h5 className="p-1 pt-20  pb-20  w-[93%] absolute top-0 font-bold">
-        Rahul Thapliyal
+        {user.fullname.firstname.charAt(0).toUpperCase()+ user.fullname.firstname.slice(1)} {user.fullname.lastname.charAt(0).toUpperCase()+ user.fullname.lastname.slice(1)}
       </h5>
       <div className='flex items-center justify-between'>
          <h1 className='h-15' src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_203,w_360/v1688398986/assets/90/34c200-ce29-49f1-bf35-e9d250e8217a/original/UberX.png" alt="" />

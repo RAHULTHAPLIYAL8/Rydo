@@ -11,7 +11,7 @@ const Start = () => {
     <div><div style={{ backgroundImage: `url(${trafficImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} className='bg-[url({trafficImage})] h-screen pt-8  w-full flex justify-between flex-col'>
         <img className="w-15 ml-8" src={uberLogo} alt="" />
         <div className='bg-white py-4 px-4 pb-7'>
-            <h2 className='text-3xl font-bold'>Get Started with Uber</h2>
+            <h2 className='text-3xl font-bold'>Get Started with Rido</h2>
             <button className='w-full bg-black text-white py-3 roudend mt-4'><Link to="/login">Continue</Link></button>
         </div>
     </div></div>
